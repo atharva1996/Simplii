@@ -37,7 +37,7 @@
               <a class="nav-item nav-link" href="{{ url_for('dashboard') }}">Dashboard</a>
               <a class="nav-item nav-link" href="{{ url_for('task') }}">Add Tasks</a>
               <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
-              <a class="nav-item nav-link" href="{{ url_for('recommend') }}">Recommend</a>
+              <a class="nav-item nav-link" href="{{ url_for('recommend') }}">Deadlines</a>
             </div>
             {% endif %}
             <!-- Navbar Right Side -->
@@ -48,7 +48,7 @@
             </div>
             {% else %}
             <div class="navbar-nav">
-              <a class="nav-item nav-link">Welcome, {{ session.get("email") }}</a>
+              <a class="nav-item nav-link">Welcome, {{ session.get("name") }}</a>
               <button class="nav-item nav-link btn btn-link" onclick="logout()">Log Out</button>
             </div>
             {% endif %}

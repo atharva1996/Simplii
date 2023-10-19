@@ -77,9 +77,9 @@
                         <label>Status</label>
                         <select class="cl_status" id="ddlStatus">
                             <option value="all">Select status </option>
+                                <option value="To-Do">To-Do</option>
                                 <option value="In Progress">In Progress</option>
                                 <option value="Done">Done</option>
-                                <option value="Blocked">Blocked</option>
                         </select>
                         &nbsp  &nbsp &nbsp &nbsp &nbsp
                         <label>Category</label>
@@ -112,7 +112,7 @@
                 <td>{{ item['taskname'] }}</td>
                 {% if item['status'] == 'Done' %}
                 <td style="background-color: lightgreen;">{{ item['status'] }}</td>
-                {% elif item['status'] == 'Blocked' %}
+                {% elif item['status'] == 'In Progress' %}
                 <td style="background-color: lightcoral;">{{ item['status'] }}</td>
                 {% else %}
                 <td style="background-color: lightblue;">{{ item['status'] }}</td>

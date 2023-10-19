@@ -26,7 +26,7 @@ Everyone participating in this project needs to abide by the aPAS - A Personal A
 
   ## Reporting Bugs
 
-  This section guides you through submitting a bug report for SE Group 26. 
+  This section guides you through submitting a bug report for SE Group 39. 
 
   When you are creating a bug report, please ensure that you include as many details as possible to understand the issue.
 

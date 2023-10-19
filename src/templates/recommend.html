@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 {% extends "layout.html" %}
 {% block content %}
-    <div class = 'container'>
-        <table class = 'table'>
+    <br>
+    <div class='container'>
+        <h1>Task Recommendations</h1>
+
+        <table class='table'>
             <thead>
                 <tr>
-                    {% for header in data[0].keys() %}
-                        <th scope ="col">{{header}}</th>
-                    {% endfor %}
+                    <th scope="col">Task Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Status</th>
                 </tr>
             </thead>
             <tbody>
-                {% for row in data %}
+                {% for task in tasks %}
                     <tr>
-                        <td>{{ list(row.values())[0] }}</td>
-                        <td>{{ list(row.values())[1] }}</td>
-                        <td>{{ list(row.values())[2] }}</td>
-                        <td>{{ list(row.values())[3] }}</td>
-                        <td>{{ list(row.values())[4] }}</td>
+                        <td>{{ task.taskname }}</td>
+                        <td>{{ task.category }}</td>
+                        <td>{{ task.startdate }}</td>
+                        <td>{{ task.duedate }}</td>
+                        <td>{{ task.status }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
+    
 {% endblock content %}
+
